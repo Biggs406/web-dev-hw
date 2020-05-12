@@ -1,1 +1,2 @@
-# web-dev-hw
+Taylor Beighle
+Hey there, I'm somewhat experienced with other programming languages and this isn't my first web development class. I'm an avid outdoorsman and musician in my free time, and am fortunate to not have been affected by the current economic crisis as I still have a job. I'm about to graduate after this summer with a BAS degree that has a biology focus, and I'm attending Montana Tech this Fall semester to continue my education with their electrical engineering program. I'm sure this won't be my last programming class!
