@@ -1,0 +1,4 @@
+The Internet is the computer network, and the Web is a service that uses it.
+The Internet is just a set of Internet protocols that allow different networks to communicate.
+A computer directory is an organizational file system structrure that contains files and other directories. 
+Version control systems allow you to compare files, identify differences, and merge the changes if needed prior to committing any code.
