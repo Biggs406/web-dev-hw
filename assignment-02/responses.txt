@@ -1,0 +1,4 @@
+Data travels over the Internet through packets, and each packet carries a maximum of 1.5 mb of data. Each packet will travel to it's destination where it decodes the data to a user-friendly format.
+An IP address is assigned to a computer on a network as an identifying, 32-bit numeric address ranging from 0-255 and seperated by periods. A Domain Name Service (DNS) is used to convert the alphabetic references into a server's IP address for hosting services.
+A cookie is a small data piece sent from a website that gets stored on a user's computer by their web browser.
+The 3 main parts of a URL are the protocol, domain name and the path.
