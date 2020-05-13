@@ -1,2 +1,3 @@
 A browser is a software application used to locate, retrieve and display content on the World Wide Web, including Web pages, images, video and other files. I use Chrome, Firefox, Internet Explorer and Microsoft Edge as my browsers.
 A markup language is a type of language used to annotate text and embed tags in accurately styled electronic documents, irrespective of computer platform, operating system, application or program. One of the most commonly used markup languages is HTML (Hypertext Markup Language.)
+https://user-images.githubusercontent.com/65258007/81870015-46fb5000-9532-11ea-92de-8c39cd46dc14.png
