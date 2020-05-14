@@ -7,5 +7,5 @@
   <li>The final thing(s) I hope to learn in this class is new approaches that designers can take to make a range of unique websites, and not just focus on things like math algorithms that can be copied and pasted from code other developers have uploaded as freeware on the Internet. I've already taken a class that was > 50% based on coding math algorithms. It's not necessary when websites like Symbolab already exist!</li>
 </ol>  
 <a href="https://www.symbolab.com/">Symbolab Solver</a>
-<a href="https://github.com/Biggs406/web-dev-hw/blob/master/assignment-02/responses.txt">responses</a> 
+<a href="https://github.com/Biggs406/web-dev-hw/blob/master/assignment-02/responses.txt">Responses</a> 
 <img src="https://user-images.githubusercontent.com/65258007/81767094-ccc8be00-9494-11ea-9e05-c47a7d152a8d.png" alt="Assignment 2 Screenshot">
