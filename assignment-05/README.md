@@ -1,1 +1,5 @@
-
+<ol>
+  <li>You are not supposed to use more than one main element in an html document.The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag. The <body> encapsulates the contents of the document.</li>
+  <li>A structural markup gives information about the structure of the document, and a semantic markup is html that gives meaning to the web page other than just presentation (such as tags).</li>
+  <li>First, I found the images to include in the web page, and then organized my file structure. After that, I included all of the necessary elements to my index.html. Then I set up my headings and lists in the proper format, and seperated them with a clipart image that is ornate. All of the included ingredients and directions were then added. I then set the appropriate sizes and orientation of the page, and finally moved onto the contact information. I did end up searching for a couple unicode symbols to add a bit to the content appearance. In the end, I just overlooked the preview for the page and tried to make sure it looked appealing.</li>
+</ol>
