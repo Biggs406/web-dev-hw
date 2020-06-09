@@ -1,1 +1,183 @@
-/* This is my own CSS! */
+ /* This is my CSS! */
+.text b {
+  font-size: 2.5em;
+}
+
+html {
+  background: #2e2e2e;
+}
+
+body {
+  background: #2e2e2e;
+  -webkit-animation: bg 10s infinite ease-out;
+          animation: bg 10s infinite ease-out;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.2);
+  background: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 1px, rgba(30, 30, 30, 0.15) 1px, rgba(30, 30, 30, 0.15) 2px);
+  -webkit-background-size: 100% 2px;
+  background: -moz-repeating-linear-gradient(top, transparent 0px, transparent 1px, rgba(30, 30, 30, 0.15) 1px, rgba(30, 30, 30, 0.15) 2px);
+  -moz-background-size: 100% 2px;
+  display: block;
+  z-index: 10;
+}
+
+.glow {
+  font-size: 40px;
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  letter-spacing: .2rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: left;
+  line-height: 1.2em;
+  -webkit-filter: colour-shift(10);
+          filter: colour-shift(10);
+  z-index: 20;
+}
+
+.grid {
+  -webkit-perspective: 300px;
+          perspective: 300px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.grid .grid-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateX(60deg);
+          transform: rotateX(60deg);
+}
+
+.line {
+  display: block;
+  position: absolute;
+  width: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid white;
+  box-sizing: border-box;
+  height: 100%;
+  background: white;
+  box-shadow: 0px 0px 6px 2px rgba(255, 225, 225, 0.8);
+}
+
+.hori, .vert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hori .line:nth-child(1) {
+  left: -40%;
+}
+.hori .line:nth-child(2) {
+  left: -20%;
+}
+.hori .line:nth-child(3) {
+  left: 0%;
+}
+.hori .line:nth-child(4) {
+  left: 20%;
+}
+.hori .line:nth-child(5) {
+  left: 40%;
+}
+.hori .line:nth-child(6) {
+  left: 60%;
+}
+.hori .line:nth-child(7) {
+  left: 80%;
+}
+.hori .line:nth-child(8) {
+  left: 100%;
+}
+.hori .line:nth-child(9) {
+  left: 120%;
+}
+.hori .line:nth-child(10) {
+  left: 140%;
+}
+
+.vert .line {
+  -webkit-animation: move 5s infinite linear;
+          animation: move 5s infinite linear;
+  width: 200%;
+  left: -50%;
+  height: 0px;
+}
+.vert .line:nth-child(1) {
+  -webkit-animation: none;
+          animation: none;
+  opacity: 0.7;
+}
+.vert .line:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.vert .line:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.vert .line:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.vert .line:nth-child(5) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.vert .line:nth-child(6) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.vert .line:nth-child(7) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.vert .line:nth-child(8) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+.vert .line:nth-child(9) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.vert .line:nth-child(10) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
