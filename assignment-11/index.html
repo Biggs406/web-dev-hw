@@ -1,1 +1,147 @@
+<html>
+<head>
+    <title>Music Player</title>
+<meta charset="utf-8">
+<meta name="description" content="Music Player">
+<meta name="author" content="Taylor Beighle">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://github.com/Biggs406/web-dev-hw/blob/master/assignment-11/css/style.css" / >
+    <script src="https://connect.soundcloud.com/sdk.js" alt="https://github.com/Biggs406/web-dev-hw/blob/master/assignment-11/js/soundcloud.js"></script>
+</head>
+<style>
+  
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+  
+</style>
+<body>
+  <div class="load-mask"></div>
+  <header>
+    <h1><img src="https://github.com/Biggs406/web-dev-hw/blob/master/assignment-11/images/logo.jpg?raw=true" width="50" height="50"/></h1>
+    <h1>Music Player</h1>
+    
+     
+    
+    <ul>
+      <li id="genre-btn">Genre</li>
+      <li id="query-box" ><input placeholder="Search"></li>
+      </ul>
+  </header>
+    <nav id="genre-container" class="hidden">
+      <svg class="close-btn">
+        <line x1="7" y1="7" x2="33" y2="33" style="stroke:#222222;"/>
+        <line x1="7" y1="33" x2="33" y2="7" style="stroke:#222222;"/>
+      </svg>
+      <ul>
+        <li id="genre">
+          <ul>
+            <li>alternative rock</li>
+            <li>ambient</li>
+            <li>classical</li>
+            <li>country</li>
+            <li>dance</li>
+            <li>deep house</li>
+            <li>disco</li>
+            <li>drum &amp; bass</li>
+            <li>dubstep</li>
+            <li>electro</li>
+            <li>electronic</li>
+            <li>folk</li>
+            <li>hardcore techno</li>
+            <li>hip hop</li>
+            <li>house</li>
+            <li>indie rock</li>
+            <li>jazz</li>
+            <li>latin</li>
+            <li>metal</li>
+            <li id="minimal techno">minimal techno</li>
+            <li>piano</li>
+            <li>pop</li>
+            <li>progressive house</li>
+            <li>punk</li>
+            <li>r&amp;b</li>
+            <li>rap</li>
+            <li>reggae</li>
+            <li>rock</li>
+            <li>singer-songwriter</li>
+            <li>soul</li>
+            <li>tech house</li>
+            <li>trance</li>
+            <li>trip hop</li>
+            <li>world</li>
+            <li>audiobooks</li>
+            <!-- <li>business</li> -->
+            <li>comedy</li>
+            <li>entertainment</li>
+            <li>learning</li>
+            <li>news&amp;politics</li>
+            <li>religion&amp;Spirituality</li>
+            <li>science</li>
+            <li>sports</li>
+            <li>storytelling</li>
+            <li>technology</li>
+          </ul>  
+        </li>
+      </ul>
+    </nav>
+    <div id="track-picker">
+      <p>re-select genre</p>
+      <svg class="close-btn">
+        <line x1="7" y1="7" x2="33" y2="33" style="stroke:#222222;"/>
+        <line x1="7" y1="33" x2="33" y2="7" style="stroke:#222222;"/>
+      </svg>
+      <svg id="left-arrow">
+        <line x1="30"  y1="0" x2="10"   y2="20" style="stroke:#222222;"/>
+        <line x1="10"  y1="20" x2="30"   y2="40" style="stroke:#222222;"/>
+      </svg>
+      <svg id="right-arrow">
+        <line x1="10"  y1="0" x2="30"   y2="20" style="stroke:#222222;"/>
+        <line x1="30"  y1="20" x2="10"   y2="40" style="stroke:#222222;"/>
+      </svg>
+      <ul></ul>
+    </div>
+    <div id="main-visual">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section id="juke-box">
+      <div id="play-btn"></div>
+      <ul>
+        <li>Turn Blue</li>
+        <li>The Black Keys</li>
+      </ul>
+      <div id="track-bar-container">
+        <div id="track-bar">
+          <div id="progress-bar"></div>
+          <div id="fader"></div>
+          <span id="playback-time">0:00</span>
+          <span id="song-duration">3:42</span>
+        </div>
+      </div>
+      <div id="volume-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/164143/volume_loud.png" alt="play">
+        <input type="range" min="0" max="100" value="100">
+      </div>
+    </section>
+  </html>
 
