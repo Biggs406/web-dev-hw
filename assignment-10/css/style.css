@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 div {
-  margin: 0 auto;
+  margin: 0;
   width: auto;
-  padding: 100px;
+  padding: 30px;
   text-align: center;
   color:white;
 }
