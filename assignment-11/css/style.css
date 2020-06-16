@@ -19,10 +19,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
     font-family: GeoSans;
     /*font-size: 62.5%;*/
-    background-color: powderblue;
+    background-color: black;
     background-size: cover;
     -webkit-animation: hue 30s infinite linear;
-    
+
     background-blend-mode: screen;
 }
 @-webkit-keyframes hue {
@@ -44,7 +44,7 @@ h1 {
 }
 img{
   border-radius: 50%;
-  
+
 }
 li {
     list-style: none;
@@ -184,7 +184,7 @@ nav
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 10px; 
+    right: 10px;
     cursor: pointer;
 }
 
@@ -386,7 +386,7 @@ progress bar
     position: relative;
     left: 200px;
     top: -15px;
-    background-color: brown;
+    background-color: black;
 }
 
 #search-bar {
