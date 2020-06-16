@@ -92,27 +92,27 @@ li a {
 	text-align: center;
 	line-height: 50px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #fff;
-	background: #2f3036;
+	color: white;
+	background: black;
 	text-decoration: none;
 }
 
 /*Hover state for top level links*/
 li:hover a {
-	background: #19c589;
+	background: darkred;
 }
 
 /*Style for dropdown links*/
 li:hover ul a {
-	background: #f3f3f3;
-	color: #2f3036;
+	background: black;
+	color: white;
 	height: 40px;
 	line-height: 40px;
 }
 
 /*Hover state for dropdown links*/
 li:hover ul a:hover {
-	background: #19c589;
+	background: darkred;
 	color: #fff;
 }
 
