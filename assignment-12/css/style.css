@@ -1,1 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+div {
+  margin: 0;
+  width: auto;
+  padding: 30px;
+  text-align: center;
+  color:white;
+}
 
+div.absolute{
+   position: absolute;
+   left: 0;
+}
+
+.button {
+  
+}
+.a {
+   font-family: "Alice", cursive, sans-serif;
+   font-size: 80px;
+   color:white;
+   text-align: right; 
+}
+a:link {
+   text-decoration: none;
+}
+
+a:hover {
+   color: #FFD700;
+   font-style: Arial, Helvetica, sans-serif;
+}
+.b {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.c {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.first-line {
+   font-size: 1em;
+   text-indent: 1.5em;
+   line-height: 1.5em;
+}
+/* PSEUDO ELEMENT - Select the first letter that occurs: */
+.first-line p:first-child::first-letter{
+   font-family: 'Bad Script', cursive;
+   font-size: 200%;
+   color:white;
+}
+.first-line p:first-child::first-line {
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+p {
+    padding : 2px;
+    margin : 0;
+}
+
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #19c589;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #19c589;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
