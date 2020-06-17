@@ -522,7 +522,7 @@ form2 .field label {
   position: absolute;
   top: 30px;
   left: 0;
-  background: linear-gradient(90deg, #b13e8b, #372056);
+  background: linear-gradient(90deg, lightblue, darkblue);
   width: 100%;
   height: 64px;
   transition: width 333ms ease-in-out;
@@ -558,7 +558,7 @@ form2 .field:hover label {
   width: 18%;
 }
 form2 input[type="submit"] {
-  background: linear-gradient(90deg, #b13e8b, #812d65);
+  background: linear-gradient(90deg, lightblue, darkblue);
   -webkit-appearance: none;
   border: none;
   position: relative;
