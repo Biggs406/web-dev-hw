@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+div {
+  margin: 0;
+  width: auto;
+  padding: 30px;
+  text-align: center;
+  color:white;
+}
+
+div.absolute{
+   position: absolute;
+   left: 0;
+}
+
+.bg {
+  /* Full height */
+  height: cover;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.a {
+   font-family: "Alice", cursive, sans-serif;
+   font-size: 80px;
+   color:darkred;
+   text-align: right; 
+}
+a:link {
+   text-decoration: none;
+}
+
+a:hover {
+   color: #FFD700;
+   font-style: Arial, Helvetica, sans-serif;
+}
+.b {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.c {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.d{
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: darkred;
+}
+.first-line {
+   font-size: 1em;
+   text-indent: 1.5em;
+   line-height: 1.5em;
+}
+/* PSEUDO ELEMENT - Select the first letter that occurs: */
+.first-line p:first-child::first-letter{
+   font-family: 'Bad Script', cursive;
+   font-size: 200%;
+   color:white;
+}
+.first-line p:first-child::first-line {
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+p {
+    padding : 2px;
+    margin : 0;
+}
+
+
+
+
+
+
+nav {
+  max-width: 960px;
+  /* The mask-image gives us some extra fading. It is not necessary but without this, you can't face out the box-shadows. This clips our menu */
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  /* Using padding instead of margin for the top and bottom here will keep our box-shadow visible and not affected by the mask-image */
+  padding: 75px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 20px;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
+/*Hover state for top level links*/
+li:hover a {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	 text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 200px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: lightblue;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+  max-width: 200px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+  position: absolute;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+
+
+
+/*Image Slideshow*/
+.slider {
+  max-width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.slider div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.slide1 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/era-vulgaris.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade 15s infinite;
+  -webkit-animation: fade 15s infinite;
+}
+.slide2 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/gamma-ray.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade2 15s infinite;
+  -webkit-animation: fade2 15s infinite;
+}
+.slide3 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/kyuss-qotsa.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade3 15s infinite;
+  -webkit-animation: fade3 15s infinite;
+}
+.slide4 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/like-clockwork.png?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade4 15s infinite;
+  -webkit-animation: fade4 15s infinite;
+}
+.slide5 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/like-cologne.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade5 15s infinite;
+  -webkit-animation: fade5 15s infinite;
+}
+.slide6 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/lullabies-to-paralyze.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade6 15s infinite;
+  -webkit-animation: fade6 15s infinite;
+}
+.slide7 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/over-the-years-and-through-the-woods.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade7 15s infinite;
+  -webkit-animation: fade7 15s infinite;
+}
+.slide8 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/queens-of-the-stone-age.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade8 15s infinite;
+  -webkit-animation: fade8 15s infinite;
+}
+.slide9 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/rated-r.png?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade9 15s infinite;
+  -webkit-animation: fade9 15s infinite;
+}
+.slide10 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/songs-for-the-deaf.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade10 15s infinite;
+  -webkit-animation: fade10 15s infinite;
+}
+.slide11 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/stone-age-complication.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade11 15s infinite;
+  -webkit-animation: fade11 15s infinite;
+}
+.slide12 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/villains.png?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade12 15s infinite;
+  -webkit-animation: fade12 15s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade4 {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade5 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade6 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade7 {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade8 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade9 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade10 {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade11 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade12 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*End Image Slideshow*/
+
+
+
+
+
+/*Contact Form*/
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+}
+
+*:focus {
+  outline: 0;
+}
+
+.wrapper2 {
+  margin: 100px auto 0;
+  width: 50%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+form2 {
+  width: 100%;
+  margin: 0;
+}
+
+form2 * {
+  font-size: 20px;
+  letter-spacing: 0.075em;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form2 .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form2 .field label {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: linear-gradient(90deg, #b13e8b, #372056);
+  width: 100%;
+  height: 64px;
+  transition: width 333ms ease-in-out;
+  text-align: center;
+  padding: 18px 0;
+}
+
+form2 .field input[type="text"],
+form2 .field textarea {
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding-left: 19.5%;
+  color: #313a3d;
+}
+
+form2 #msg {
+  height: 64px;
+  resize: none;
+  transition: all 333ms ease-in-out;
+  padding-top: 10px;
+}
+form2 textarea:focus#msg,
+form2 textarea:not(:placeholder-shown)#msg {
+  height: 166px;
+}
+form2 input[type="text"]:focus + label,
+form2 input[type="text"]:not(:placeholder-shown) + label,
+form2 textarea:focus + label,
+form2 textarea:not(:placeholder-shown) + label,
+form2 .field:hover label {
+  width: 18%;
+}
+form2 input[type="submit"] {
+  background: linear-gradient(90deg, #b13e8b, #812d65);
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  padding: 13px 50px;
+  transition: all 0.3s ease-in-out;
+}
+form2 input[type="submit"]:hover,
+form2 input[type="submit"]:focus {
+  background: #372056;  
+}
+/*End Contact Form*/
