@@ -187,3 +187,274 @@ input[type=checkbox]:checked ~ #menu{
 		display:block;
 	}
 }
+
+
+
+
+
+.slider {
+  max-width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.slider div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.slide1 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/era-vulgaris.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade 15s infinite;
+  -webkit-animation: fade 15s infinite;
+}
+.slide2 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/gamma-ray.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade2 15s infinite;
+  -webkit-animation: fade2 15s infinite;
+}
+.slide3 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/kyuss-qotsa.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade3 15s infinite;
+  -webkit-animation: fade3 15s infinite;
+}
+.slide4 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/like-clockwork.png?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade4 15s infinite;
+  -webkit-animation: fade4 15s infinite;
+}
+.slide5 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/like-cologne.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade5 15s infinite;
+  -webkit-animation: fade5 15s infinite;
+}
+.slide6 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/lullabies-to-paralyze.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade6 15s infinite;
+  -webkit-animation: fade6 15s infinite;
+}
+.slide7 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/over-the-years-and-through-the-woods.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade7 15s infinite;
+  -webkit-animation: fade7 15s infinite;
+}
+.slide8 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/queens-of-the-stone-age.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade8 15s infinite;
+  -webkit-animation: fade8 15s infinite;
+}
+.slide9 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/rated-r.png?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade9 15s infinite;
+  -webkit-animation: fade9 15s infinite;
+}
+.slide10 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/songs-for-the-deaf.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade10 15s infinite;
+  -webkit-animation: fade10 15s infinite;
+}
+.slide11 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/stone-age-complication.jpg?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade11 15s infinite;
+  -webkit-animation: fade11 15s infinite;
+}
+.slide12 {
+  background: url(https://github.com/Biggs406/web-dev-hw/blob/master/assignment-12/images/villains.png?raw=true)no-repeat
+    center;
+  background-size: cover;
+  animation: fade12 15s infinite;
+  -webkit-animation: fade12 15s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade4 {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade5 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade6 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade7 {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade8 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade9 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade10 {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade11 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade12 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
