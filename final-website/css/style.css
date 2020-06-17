@@ -27,8 +27,17 @@ div.absolute{
 .a {
    font-family: "Alice", cursive, sans-serif;
    font-size: 80px;
-   color:darkred;
+   color:#353839;
    text-align: right; 
+   text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
 }
 a:link {
    text-decoration: none;
@@ -50,7 +59,16 @@ a:hover {
 .d{
    font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
-  color: darkred;
+  color: #353839;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
 }
 .first-line {
    font-size: 1em;
