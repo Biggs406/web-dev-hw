@@ -191,7 +191,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
-
+/*Image Slideshow*/
 .slider {
   max-width: 400px;
   height: 400px;
@@ -458,3 +458,102 @@ input[type=checkbox]:checked ~ #menu{
     opacity: 0;
   }
 }
+/*End Image Slideshow*/
+
+
+
+
+
+/*Contact Form*/
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+}
+
+*:focus {
+  outline: 0;
+}
+
+.wrapper2 {
+  margin: 100px auto 0;
+  width: 50%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+form2 {
+  width: 100%;
+  margin: 0;
+}
+
+form2 * {
+  font-size: 20px;
+  letter-spacing: 0.075em;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form2 .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form2 .field label {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: linear-gradient(90deg, #b13e8b, #372056);
+  width: 100%;
+  height: 64px;
+  transition: width 333ms ease-in-out;
+  text-align: center;
+  padding: 18px 0;
+}
+
+form2 .field input[type="text"],
+form2 .field textarea {
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding-left: 19.5%;
+  color: #313a3d;
+}
+
+form2 #msg {
+  height: 64px;
+  resize: none;
+  transition: all 333ms ease-in-out;
+  padding-top: 10px;
+}
+form2 textarea:focus#msg,
+form2 textarea:not(:placeholder-shown)#msg {
+  height: 166px;
+}
+form2 input[type="text"]:focus + label,
+form2 input[type="text"]:not(:placeholder-shown) + label,
+form2 textarea:focus + label,
+form2 textarea:not(:placeholder-shown) + label,
+form2 .field:hover label {
+  width: 18%;
+}
+form2 input[type="submit"] {
+  background: linear-gradient(90deg, #b13e8b, #812d65);
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  padding: 13px 50px;
+  transition: all 0.3s ease-in-out;
+}
+form2 input[type="submit"]:hover,
+form2 input[type="submit"]:focus {
+  background: #372056;  
+}
+/*End Contact Form*/
